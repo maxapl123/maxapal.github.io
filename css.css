@@ -1,0 +1,48 @@
+.grid{
+	display:grid;
+	grid-template-columns:minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr); /*ширина колонок(кол-во)*/  /* 1fr-адаптивная еденица*/ /* minmax(x,x)*/
+	 /*repeat(auto-fit(fill),minmax(x,x) чтобы колоны перестраивались под себя*/  
+	 grid-taemplate-areas:;/* определяет порядок прорисовки частей,при наличии у этих частей значения x:grid-area;  */ 
+	 /*  */
+	
+	
+	
+	grid-template-rows:200px 200px 200px; /*высота рядов*/
+	grid-auto-rows:50px; /*стандартная по-умолчанию высота рядов*/
+	grid-column-gap:10px;/*расстояние между колоннами*/
+	grid-row-gap:5px;/*расстояние между рядами*/
+	/*можно обЪеденить grid-gap:;*/
+	grid-auto-flow:row; /*порядок отрисовки column ,row*/
+}
+.grid div:nth-child(1){
+	grid-column-start:1; /*grid-column:1/4; альтернативная запись*/
+	grid-column-end:4;
+	grid-row:;/*определяет номер ряда*/
+}
+.grid div:nth-child(2){
+	grid-column-start:1;
+	grid-column-end:2;
+}
+.grid div:nth-child(3){
+	grid-column-start:2;
+	grid-column-end:4;
+}
+.grid div:nth-child(4){
+	grid-column-start:1;
+	grid-column-end:4;
+}
+.item-block1{
+	background-color:#475278;
+	border:1px solid #212941;
+	border-radius:5px;
+	color:white;
+	font-size:25px;
+}
+.item-block2{
+	background-color:#293050;
+	border:1px solid #212941;
+	border-radius:5px;
+	color:white;
+    font-size:25px;
+}
+
