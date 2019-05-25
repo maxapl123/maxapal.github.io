@@ -1,0 +1,22 @@
+h1, .h1
+{
+   font-family: Times New Roman;
+   font-size: 24px;
+   text-decoration: none;
+   color: #FF65AD;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+
+}
+h2, .h2
+{
+   font-family: Times New Roman;
+   font-size: 16px;
+   text-decoration: none;
+   color: #663E32;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   
+
+}
+
